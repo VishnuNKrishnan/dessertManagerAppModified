@@ -1,0 +1,80 @@
+.dessertsListHolder {
+  width: 90%;
+  height: 90%;
+  /* border: 2px solid red; */
+  border-radius: 5px;
+  /* box-shadow: -2px -2px 7px 2px rgba(249, 249, 249, 0.796),
+    2px 2px 7px 2px rgba(147, 147, 147, 0.683); */
+  background-color: rgba(142, 140, 140, 0.44);
+  backdrop-filter: blur(8px);
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .dessertsListHolder {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.dessertsListHolder h1 {
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: rgb(221, 220, 220);
+  font-weight: 900;
+}
+
+.listHolder {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.listItem {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.376);
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+  .listItem {
+    width: 100%;
+  }
+}
+
+.listItem .name {
+  width: 50%;
+}
+
+.listItem .price {
+  width: 25%;
+}
+
+.listItem .action {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.listItem .action img {
+  height: 20px;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+.listItem .action img:hover {
+  transform: scale(130%);
+}

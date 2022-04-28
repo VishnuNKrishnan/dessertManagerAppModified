@@ -1,0 +1,84 @@
+.addDessertFormholder {
+  width: 90%;
+  height: 90%;
+  /* border: 2px solid red; */
+  border-radius: 5px;
+  /* box-shadow: -2px -2px 7px 2px rgba(249, 249, 249, 0.796),
+    2px 2px 7px 2px rgba(147, 147, 147, 0.683); */
+  background-color: rgba(142, 140, 140, 0.44);
+  backdrop-filter: blur(8px);
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .addDessertFormholder {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.addDessertFormholder h1 {
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: rgb(221, 220, 220);
+  font-weight: 900;
+}
+
+.addDessertFormholder form {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(192, 190, 190);
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 760px) {
+  .addDessertFormholder form {
+    box-shadow: none;
+    width: 100%;
+  }
+}
+
+.addDessertFormholder form input {
+  width: 60%;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 2px solid rgb(154, 154, 154);
+  margin-bottom: 30px;
+}
+
+.primaryBtn {
+  width: 60%;
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(62, 62, 62);
+  padding: 10px;
+  outline: none;
+  border: none;
+  box-shadow: -2px -2px 7px 2px rgba(209, 209, 209, 0.796),
+    2px 2px 7px 2px rgba(147, 147, 147, 0.683);
+  background-color: rgb(192, 190, 190);
+  cursor: pointer;
+}
+
+.primaryBtn:active {
+  box-shadow: 2px 2px 7px 2px rgba(209, 209, 209, 0.796),
+    -2px -2px 7px 2px rgba(147, 147, 147, 0.683);
+}
+
+.error {
+  margin-top: 30px;
+  color: rgb(166, 39, 16);
+}

@@ -1,0 +1,45 @@
+.desertsChartHolder {
+  width: 90%;
+  height: 90%;
+  /* border: 2px solid red; */
+  border-radius: 5px;
+  /* box-shadow: -2px -2px 7px 2px rgba(249, 249, 249, 0.796),
+    2px 2px 7px 2px rgba(147, 147, 147, 0.683); */
+  background-color: rgba(142, 140, 140, 0.44);
+  backdrop-filter: blur(8px);
+  padding: 30px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .desertsChartHolder {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.desertsChartHolder h1 {
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: rgb(221, 220, 220);
+  font-weight: 900;
+}
+
+.desertsChartHolder .canvas {
+  width: 500px;
+  height: 500px;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .desertsChartHolder .canvas {
+    width: 100%;
+  }
+}

@@ -1,0 +1,26 @@
+.mobileNavHolder {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(192, 190, 190);
+  padding: 60px 30px;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0px;
+}
+
+@media only screen and (min-width: 801px) {
+  .mobileNavHolder {
+    display: none;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 801px) {
+  .mobileNavHolder {
+    width: 100vw;
+    border-radius: 5px 5px 0 0;
+  }
+}
